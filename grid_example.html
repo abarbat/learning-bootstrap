@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Basic HTML File</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style type="text/css">
+    p {
+        padding: 50px;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        background: #ccf;
+    }
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div clas="row">
+		<div class="col-md-4"><p>Box 1</p></div>
+		<div class="col-md-4"><p>Box 2</p></div>
+		<div class="col-md-4"><p>Box 3</p></div>
+		<div class="clearfix visible-md-block"></div><!-- see note -->
+		<div class="col-md-4"><p>Box 4</p></div>
+		<div class="col-md-4"><p>Box 5</p></div>
+		<div class="col-md-4"><p>Box 6</p></div>
+		<div class="clearfix visible-md-block"></div>
+		<div class="col-md-4"><p>Box 7</p></div>
+		<div class="col-md-4"><p>Box 8</p></div>
+		<div class="col-md-4"><p>Box 9</p></div>
+		<div class="clearfix visible-md-block"></div>
+		<div class="col-md-4"><p>Box 10</p></div>
+		<div class="col-md-4"><p>Box 11</p></div>
+		<div class="col-md-4"><p>Box 12</p></div>
+	</div>
+</div>
+
+<!-- Since default gird system has 12 columns and in our layout, three boxes (each at 4 columns) adds up to 12, that's why we cleared columns after every third occurrence. In any other scenario where columns numbers i.e. col-md-* are different for every column you should use .clearfix after the column that makes the complete 12 column grid. The responsive utility class .visible-md-block makes the .clearfix class effective only on medium size devices and it is hidden on other devices. There is also .visible-xs-* and etc. -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

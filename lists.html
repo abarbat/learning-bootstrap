@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap Lists</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		ul, dl {
+			background: #cfc;
+		}
+		.list-group {
+			max-width: 200px;
+		}
+		.list-group-item {
+			background: #cfc;
+		}
+	</style>
+</head>
+<body>
+
+<!-- examples from: 
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-lists.php
+ -->
+
+<div class="container">
+
+<h1>Bootstrap Lists</h1>
+
+<p>Strip the bullets from a &lt;ul&gt; with .list-unstyled:</p>
+
+<ul class="list-unstyled">
+  <li>Home</li>
+  <li>Products (nested list)
+    <ul>
+      <li>Gadgets</li>
+      <li>Accessories</li>
+    </ul>
+  </li>
+  <li>About Us</li>
+  <li>Contact</li>
+</ul>
+
+<p>Place list items inline with .list-inline:</p>
+
+<ul class="list-inline">
+    <li>Home</li>
+    <li>Products</li>
+    <li>About Us</li>
+    <li>Contact</li>
+</ul>
+
+<p>Position definition-list items left and right with .dl-horizontal:</p>
+
+<dl class="dl-horizontal">
+    <dt>User Agent</dt>
+    <dd>An HTML user agent is any device that interprets HTML documents.</dd>
+    <dt>Client-side Scripting</dt>
+    <dd>Client-side scripting generally refers to the category of computer programs on the web that are executed client-side i.e. by the user's web browser.</dd>
+    <dt>Document Tree</dt>
+    <dd>The tree of elements encoded in the source document.</dd>
+</dl>
+
+<p>Easy menu construction with .list-group (seen here with a &lt;ul&gt;:</p>
+
+<ul class="list-group">
+    <li class="list-group-item">Pictures</li>
+    <li class="list-group-item">Documents</li>        
+    <li class="list-group-item">Music</li>
+    <li class="list-group-item">Videos</li>
+</ul>
+
+<p>Easy menu construction with .list-group (seen here with a &lt;div&gt; and &lt;a href&gt;s:</p>
+
+<div class="list-group">
+    <a href="#" class="list-group-item active">
+        <span class="glyphicon glyphicon-camera"></span> Pictures <span class="badge">25</span>
+    </a>
+    <a href="#" class="list-group-item">
+        <span class="glyphicon glyphicon-file"></span> Documents <span class="badge">145</span>
+    </a>
+    <a href="#" class="list-group-item">
+        <span class="glyphicon glyphicon-music"></span> Music <span class="badge">50</span>
+    </a>
+    <a href="#" class="list-group-item">
+        <span class="glyphicon glyphicon-film"></span> Videos <span class="badge">8</span>
+    </a>
+</div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

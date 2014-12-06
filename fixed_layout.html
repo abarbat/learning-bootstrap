@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap fixed-width</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	.my1 {
+		padding: 20px;
+		background: #fcc;
+	}
+	</style>
+</head>
+<body>
+
+<!-- The process of creating the fixed yet responsive layout starts with the .container class. After that create rows with the .row class to wrap the horizontal groups of columns. Rows must be placed within a .container for proper alignment and padding. -->
+
+<div class="container">
+
+
+<p class="my1"><strong>Fixed-width:</strong> "Bootstrap requires a containing element to wrap site contents and house [the] grid system. You may choose one of two containers to use in your projects. Note that, due to padding and more, <strong>neither container is nestable.</strong> 
+
+Use <code>.container</code> for a responsive fixed-width container.
+
+Use <code>.container-fluid</code> for a full-width container, spanning the entire width of your viewport" -- that's wall to wall, without margins  
+(<a href="http://bootstrapdocs.com/v3.2.0/docs/css/#overview-normalize" target="_blank">Source</a>). 
+
+Here we have a <code>.container</code>: responsive, fixed-width. 
+See <a href="fluid_layout.html">a fluid version</a>.</p>
+
+<!-- The P above works fine w/o a row DIV because it spans the full width of the container by default. -->
+
+
+<div class="row">
+
+	<div class="col-xs-4">
+	<p>Etiam eleifend id diam ac auctor. Aenean consectetur mauris urna, sit amet interdum quam malesuada non. Vestibulum ut sodales odio, vel tincidunt diam. Integer molestie, metus eget semper efficitur, lectus dolor pulvinar tortor, eget consectetur nibh risus id eros. Maecenas vestibulum eros ac sapien accumsan pharetra. Vivamus tempus enim sed tortor lacinia egestas. Aenean id diam nisi. Donec risus arcu, posuere tincidunt mattis eu, semper at sem. Nam sagittis varius lacus, at eleifend eros semper eu. Curabitur at interdum felis, at aliquet velit.</p>
+	</div>
+	<div class="col-xs-4">
+	<p>Duis at molestie urna, quis feugiat arcu. Vestibulum vestibulum varius velit id laoreet. Integer arcu arcu, pellentesque eu sapien a, sodales eleifend nulla. Sed tempus tellus eros, et luctus quam placerat et. Donec quis ipsum urna. Maecenas interdum rhoncus mattis. Praesent non massa arcu. Quisque imperdiet, sapien at maximus ornare, tortor velit efficitur odio, at commodo augue ipsum at mi. Donec aliquet ligula et tempus gravida. Vivamus at arcu quis lacus malesuada malesuada eu faucibus elit. Sed rhoncus mattis eros, scelerisque blandit leo. Sed euismod eros ac viverra lacinia. Suspendisse auctor egestas arcu, eu imperdiet ante fermentum sed. Proin vel mauris eu leo mattis iaculis.</p>
+	</div>
+	<div class="col-xs-4">
+	<p>Duis lacinia, augue ornare gravida interdum, massa enim condimentum risus, non semper odio tellus nec tellus. Nam id luctus arcu. Aliquam erat volutpat. Etiam non dui tempor, rhoncus massa quis, pulvinar leo. Donec gravida posuere enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare consectetur nulla, nec finibus ligula.</p>
+	</div>
+
+</div><!-- close row -->
+
+</div><!-- close container -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap Forms</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		form {
+			background: #fcc;
+			padding: 20px;
+			max-width: 700px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- examples from 
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-forms.php
+-->
+
+<h1>Bootstrap Forms</h1>
+
+<p>Bootstrap has lots of styles for all the parts of a form. See the full <a href="http://bootstrapdocs.com/v3.2.0/docs/css/#forms" target="_blank">documentation</a>.</p>
+
+<p>First, using no classes at all <em>except</em> .form-control and a couple of button classes on the Login button:</p>
+
+<form>
+    <label for="inputEmail">Email</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+
+    <label for="inputPassword">Password</label>
+    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+    <label><input type="checkbox"> Remember me</label>
+    
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<p>Below, using more Bootstrap form classes (looks nicer):</p>
+
+<form>
+    <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<p>Here's what Bootstrap calls "horizontal" form layout:</p>
+
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail" class="control-label col-xs-2">Email</label>
+        <div class="col-xs-10">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="control-label col-xs-2">Password</label>
+        <div class="col-xs-10">
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </div>
+</form>
+
+<p>This is Bootstrap's "inline" form layout:</p>
+
+<form class="form-inline">
+    <div class="form-group">
+        <label class="sr-only" for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+ </form>
+    
+<form class="form-inline">
+    <div class="form-group">
+        <label class="control-label col-xs-4">Date of Birth:</label>
+        <div class="col-xs-2">
+            <select class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+            <select class="form-control">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+            </select>
+        </div>
+        <div class="col-xs-3">
+        	<select class="form-control">
+                <option>2000</option>
+                <option>2001</option>
+                <option>2002</option>
+            </select>
+        </div>
+    </div>
+</form>
+
+<p>Finally, you can control text size very nicely:</p>
+
+    <form>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon">
+                        <input type="checkbox">
+                    </span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-btn">
+                        <button tabindex="-1" class="btn btn-default" type="button">Action</button>
+                        <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="checkbox">
+                    </span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button tabindex="-1" class="btn btn-default" type="button">Action</button>
+                        <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon">
+                        <input type="checkbox">
+                    </span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="input-group input-group-sm">
+                    <div class="input-group-btn">
+                        <button tabindex="-1" class="btn btn-default" type="button">Action</button>
+                        <button tabindex="-1" data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu"> 
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+    </form>
+
+<h2>Bootstrap Form Validation States</h2>
+
+<p>There are classes for has-success, has-warning, and has-error:</p>
+
+<form class="form-horizontal">
+    <div class="form-group has-success">
+        <label class="col-xs-2 control-label" for="inputSuccess">Username</label>
+        <div class="col-xs-10">
+            <input type="text" id="inputSuccess" class="form-control" placeholder="Input with success">
+            <span class="help-block">Username is available</span>
+        </div>
+    </div>
+    <div class="form-group has-warning">
+        <label class="col-xs-2 control-label" for="inputWarning">Password</label>
+        <div class="col-xs-10">
+            <input type="password" id="inputWarning" class="form-control" placeholder="Input with warning">
+            <span class="help-block">Password strength: Weak</span>
+        </div>
+    </div>
+    <div class="form-group has-error">
+        <label class="col-xs-2 control-label" for="inputError">Email</label>
+        <div class="col-xs-10">
+            <input type="email" id="inputError" class="form-control" placeholder="Input with error">
+            <span class="help-block">Please enter a valid email address</span>
+        </div>
+    </div>
+</form>
+
+</div><!-- close container -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

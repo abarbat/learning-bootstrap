@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap Navigation Styles</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		p {
+			margin-top: 20px;
+		}
+		.container {
+			margin-bottom: 50px;
+			padding-bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Bootstrap Navigation Styles</h1>
+
+<h2>Inline Nav</h2>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<p>Example 1: Tabs (with <code>class="nav nav-tabs"</code>)</p>
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Messages</a></li>
+</ul>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<p>Example 2: The same, with icons added</p>
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
+</ul>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<p>Example 3: Identical to example 1 above, but with <code>class="nav nav-pills"</code> instead of <code>class="nav nav-tabs"</code></p>
+
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Messages</a></li>
+</ul>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<p>Example 4: The same, with icons added</p>
+
+<ul class="nav nav-pills">
+    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
+</ul>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<p>Example 5: Justified and centered pills (buttons) will span 100% of the width of their container</p>
+
+<ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Messages</a></li>
+</ul>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<h2>Stacked Nav</h2>
+
+<p>Add one more class to the UL: <code>nav-stacked</code></p>
+
+<p>You could contrain the width. The default is 100%.</p>
+
+<ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Messages</a></li>
+</ul>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<h2>Drop-down Menus</h2>
+
+<p>Four CSS classes in Bootstrap -- <code>.dropdown</code>, <code>.dropdown-toggle</code>, <code>.dropdown-menu</code> and <code>.caret</code> -- can be added to <code>.nav</code>, <code>.nav-tabs</code>, and <code>.nav-pills</code> to create simple drop-down menus.</p>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<p>Below is a tab version with one drop-down menu.</p>
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">Drafts</a></li>
+            <li><a href="#">Sent Items</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Trash</a></li>
+        </ul>
+    </li>
+</ul>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<p>Below is a pill (button) version with one drop-down menu.</p>
+
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Messages <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">Drafts</a></li>
+            <li><a href="#">Sent Items</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Trash</a></li>
+        </ul>
+    </li>
+</ul>
+
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
+
+<p>For a stacked version of nav with show/hide menus, you'd use a jQuery accordion.</p>
+
+<p>There is a <code>class="disabled"</code> to remove the hover from a tab or pill. However, it does not remove the A HEF.</p>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

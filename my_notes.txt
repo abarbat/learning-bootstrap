@@ -1,0 +1,123 @@
+Bootstrap Tutorial
+Note: I downloaded jQuery for this and put it into the /js/ folder 
+(version 1.11.1).
+(It does not come with Bootstrap.)
+Original Bootstrap distribution is in the folder named /dist BOOTSTRAP/
+
+For free Bootstrap themes:
+http://bootswatch.com/ 
+http://bootswatch.com/flatly/ 
+
+Also:
+https://wrapbootstrap.com/?ref=bsd
+
+
+Tutorial Start Page:
+
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/
+
+Current Page:
+
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-navs.php
+
+The beginning of the tutorial is about using the grid system of Bootstrap.
+It is a a 12-column grid.
+You can use mixed column widths on a page.
+Each column is spec'd within a row.
+.container - A DIV with this class must wrap the rows.
+Can use more than one .container DIV on a page.
+Can use more than one .row DIV in any container.
+
+.container adds responsive margins left and right.
+
+You make cols inside rows like so:
+<div class="row">
+<div class="col-lg-2">
+</div>
+</div>
+
+In fact, that example would require more columns, because col-lg-2 means the DIV (block) spans 2 columns. Six like that would make 6 perfectly spaced columns across the full available 12 columns. 
+
+RESPONSIVE
+
+To control the responsive reactions, the column specs would usually be more like this:
+<div class="col-sm-6 col-md-4 col-lg-2">
+That says: On small screens, the DIV spans 6 columns (total = 2/row);
+On medium screens, the DIV spans 4 columns (total = 3/row);
+On large screens, the DIV spans 2 columns (total = 6/row).
+
+My file named responsive_layout.html shows that layout.
+That file also includes clearfix DIVs, which are used to ensure that the tops of columns line up neatly from left to right. Clearfixes must specify inline, block, or inline-block:
+<div class="clearfix visible-sm-block"></div>
+They are positioned at the breakpoint for the row, for each device size.
+Note: If you will have exactly six blocks, in the case above you will not need a clearfix for the large screen. 
+
+Also, if you set options for ONLY small screens, it cascades up -- all bigger screens will follow suit. 
+
+TEXT STYLES
+
+Working with Paragraphs: Bootstrap's global default font-size is 14px, with a line-height of 1.428. This is applied to the <body> and all paragraphs. In addition to that a bottom margin of half their line-height (10px by default) is applied to the all paragraphs (<p>).
+You can also make a paragraph stand out by just adding the class .lead.
+
+TABLES
+
+Just add Bootstrap's .table class to the <table> element.
+
+LISTS
+
+UL classes: 
+Add class="list-unstyled" to UL to remove bullets.
+Add class="list-inline" to UL to position all list items inline.
+
+Bootstrap list groups:
+Easy menu construction with UL class="list-group"
+
+Horizontal definition lists:
+Position definition-list items left and right with .dl-horizontal.
+
+FORMS
+
+No class needed on <form>. 
+
+http://bootstrapdocs.com/v3.2.0/docs/css/#forms 
+
+"Note:In Bootstrap 3 all textual elements like <input>, <textarea>, and <select> with the class .form-control are 100% wide by default. To use them inline, you'll have to set a width on the element the form controls used within."
+
+"Note:It is recommended to include a label for every form inputs otherwise screen readers will have trouble with your forms. However in case of inline form layout you can hide these labels using the .sr-only class."
+
+"You can also match the sizes of your form controls to the Bootstrap grid column sizes. Just wrap your form controls (i.e. <input>, <textarea>, and <select>) in grid columns, or any custom element and apply the grid classes on it."
+
+There are lots of options for forms!
+
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-forms.php
+
+"Bootstrap includes support for all standard form controls as well as new HTML5 input types such as datetime, number, email, url, search, tel, color etc. The following example will show you the usages of standard form controls with Twitter Bootstrap."
+
+IMAGES
+
+Various options: 
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-images.php
+
+"Images in Bootstrap 3 can be made responsive-friendly via the addition of the .img-responsive class. This applies max-width: 100%; and height: auto; to the image so that it scales nicely to the parent element."
+
+Example: 
+<img src="..." class="img-responsive" alt="Responsive image"> 
+
+http://bootstrapdocs.com/v3.2.0/docs/css/#images
+
+ICONS
+
+"Bootstrap includes 200 Glyphicons" (I see 64), available in font format for usability and scalability. You can apply the CSS color property on the specific element.
+
+http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-icons.php
+
+More can be found HERE:
+
+http://glyphicons.com/
+
+NAV: TABS and PILLS (BUTTONS)
+
+Default styles available for horizontal tabs and both horizontal and vertical buttons (called pills). 
+
+
+
