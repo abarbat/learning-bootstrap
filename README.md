@@ -13,3 +13,6 @@ However, the tutorial was more useful to me for getting started. This page in pa
 
 http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-get-started.php
 
+If you want to learn Bootstrap, make sure you get your files from:
+
+http://getbootstrap.com/
