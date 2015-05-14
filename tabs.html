@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Tabs in Bootstrap</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+
+	<h1>Tabs in Bootstrap</h1>
+
+    <p>All the content hidden behind tabs is here on this page.</p>
+
+    <!-- Tabs -->
+
+    <ul class="nav nav-tabs" role="tablist">
+    	<li class="active"><a href="#vespa" role="tab" data-toggle="tab">Vespa</a></li>
+    	<li><a href="#honda" role="tab" data-toggle="tab">Honda</a></li>
+        <li><a href="#ducati" role="tab" data-toggle="tab">Ducati</a></li>
+    </ul>
+
+<!-- Tab Content -->
+
+<div class="tab-content">
+
+    <div class="active tab-pane fade in" id="vespa">
+    	<h2>Vespa</h2>
+        <p>Vespa is an Italian brand of scooter manufactured by Piaggio. The name means wasp in Italian. The Vespa has evolved from a single model motor scooter manufactured in 1946 by Piaggio & Co. S.p.A. of Pontedera, Italy—to a full line of scooters and one of seven companies today owned by Piaggio.</p>
+
+        <p>From their inception, Vespa scooters have been known for their painted, pressed steel unibody which combines a complete cowling for the engine (enclosing the engine mechanism and concealing dirt or grease), a flat floorboard (providing foot protection), and a prominent front fairing (providing wind protection) into a structural unit.</p>
+
+        <p>[<a href="http://en.wikipedia.org/wiki/Vespa" target="_blank">source</a>]</p>
+    </div>
+
+    <div class="tab-pane fade" id="honda">
+    	<h2>Honda</h2>
+        <p>Honda is the largest motorcycle manufacturer in Japan and has been since it started production in 1955. At its peak in 1982, Honda manufactured almost three million motorcycles annually. By 2006 this figure had reduced to around 550,000 but was still higher than its three domestic competitors.</p>
+
+        <p>During the 1960s, when it was a small manufacturer, Honda broke out of the Japanese motorcycle market and began exporting to the U.S. Working with the advertising agency Grey Advertising, Honda created an innovative marketing campaign, using the slogan “You meet the nicest people on a Honda.” In contrast to the prevailing negative stereotypes of motorcyclists in America as tough, antisocial rebels, this campaign suggested that Honda motorcycles were made for the everyman. The campaign was hugely successful; the ads ran for three years, and by the end of 1963 alone, Honda had sold 90,000 motorcycles.</p>
+
+        <p>[<a href="http://en.wikipedia.org/wiki/Honda#Motorcycles" target="_blank">source</a>]</p>
+    </div>
+
+    <div class="tab-pane fade" id="ducati">
+    	<h2>Ducati</h2>
+        <p>Ducati Motor Holding S.p.A. is an Italian company that designs and manufactures motorcycles. Headquartered in Bologna, Italy, Ducati is owned by German automotive manufacturer Audi through its Italian subsidiary Lamborghini, which is all owned by the Volkswagen Group.
+
+        <p>Ducati's history with motorsport began with speed records on Cucciolo motorized bicycle factory racers in 1951, followed in 1954 with bringing in Fabio Taglioni to found a road racing program with the 100 Gran Sport. As of 2009, Ducati was still pursuing the “win on Sunday, sell on Monday” business model and spending 10% of company revenues, €40 million, on its racing business.</p>
+
+        <p>[<a href="http://en.wikipedia.org/wiki/Ducati" target="_blank">source</a>]</p>
+    </div>
+
+</div><!-- close tab-content -->
+
+</div><!-- close container -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
