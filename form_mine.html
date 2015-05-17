@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bootstrap Form</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        form {
+            background: #ccf;
+            padding: 35px 0 20px 0;
+            -webkit-border-radius: 10px;
+               -moz-border-radius: 10px;
+                    border-radius: 10px;
+            border: 0px solid #ccf;
+        }
+        @media (max-width: 768px) {
+            body {
+                background: #ccf;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="jumbotron">
+    <p>Learning some tricks with Bootstrap and formatting a form. Using <a href="http://html5doctor.com/html5-forms-input-types/" target="_blank">HTML5 form input types</a>. This is reasonably responsive, although not perfect.</p>
+</div>
+
+<!-- default is vertical, with label on top of input field -->
+<form role="form" class="form-horizontal">
+    <!-- a form-group works like a row, so you can have cols inside it -->
+    <div class="form-group">
+        <label for="email" class="control-label col-sm-3">Email:</label>
+        <!-- you must wrap the input field in a div to get the "col" class to work -->
+        <div class="col-sm-6">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+        </div>
+    </div><!-- close form-group -->
+    <div class="form-group">
+        <label for="twitter" class="control-label col-sm-3">Twitter:</label>
+        <div class="col-sm-6">
+            <!-- must add ANOTHER div if you want to include a doodad atfront of input field; otherwise, the input field will be too wide -->
+            <div class="input-group">
+                <!-- could use a glyphicon, but there is not one for @ -->
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" name="twitter" id="twitter" placeholder="Twitter handle">
+            </div>
+        </div>
+    </div><!-- close form-group -->
+    <div class="form-group">
+        <label for="username" class="control-label col-sm-3">Username:</label>
+        <div class="col-sm-6">
+            <div class="input-group">
+                <!-- here we use a glyphicon -->
+                <!-- helpful: http://glyphicons.bootstrapcheatsheets.com/ -->
+                <span class="input-group-addon glyphicon glyphicon-user"></span>
+                <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+            </div>
+        </div>
+    </div><!-- close form-group -->
+    <div class="form-group">
+        <label for="phone" class="control-label col-sm-3">Phone:</label>
+        <div class="col-sm-6">
+            <div class="input-group">
+                <!-- here we use a glyphicon -->
+                <!-- helpful: http://glyphicons.bootstrapcheatsheets.com/ -->
+                <span class="input-group-addon glyphicon glyphicon-phone"></span>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="000-000-0000">
+            </div>
+        </div>
+    </div><!-- close form-group -->
+    <!-- now some crazy style for radio buttons -->
+    <div class="form-group">
+	<div class="btn-group col-sm-offset-3 col-xs-offset-1" data-toggle="buttons">
+        <!-- btn-primary: see http://getbootstrap.com/css/#buttons-options -->
+		<label class="btn btn-primary active">
+			<input type="radio" name="sample" id="female" checked>
+			Female
+		</label>
+		<label class="btn btn-primary">
+			<input type="radio" name="sample" id="male">
+			Male
+		</label>
+		<label class="btn btn-primary">
+			<input type="radio" name="sample" id="notgiven">
+			Prefer not to say
+		</label>
+	</div><!-- close btn-group -->
+    </div><!-- close form-group -->
+    <div class="form-group">
+        <!-- note how the button is positioned with offset to create empty columns -->
+        <!-- note too how col constrains width of button -->
+        <button type="submit" class="btn btn-success col-sm-3 col-sm-offset-3 col-xs-10 col-xs-offset-1">Submit</button>
+    </div><!-- close form-group -->
+</form>
+
+
+</div><!-- close container -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
